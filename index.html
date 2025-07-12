@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdvaantaA LLC - Software Development & Services in Austin, TX</title>
+    <meta
+      name="description"
+      content="AdvaantaA LLC offers software development, consulting, training, and global trade services in Austin, Texas. Discover innovative software solutions and export/import expertise."
+    />
+    <meta
+      name="keywords"
+      content="software development Austin, consulting services Texas, training Austin, export import services, AdvaantaA LLC, software products"
+    />
+    <meta name="author" content="AdvaantaA LLC" />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph Tags for Social Media -->
+    <meta
+      property="og:title"
+      content="AdvaantaA LLC - Software & Services in Austin, TX"
+    />
+    <meta
+      property="og:description"
+      content="Innovative software development, consulting, training, and global trade services from AdvaantaA LLC in Austin, Texas."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    />
+    <meta property="og:url" content="https://advaantaa.com" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="AdvaantaA LLC - Software & Services in Austin, TX"
+    />
+    <meta
+      name="twitter:description"
+      content="Innovative software development, consulting, training, and global trade services from AdvaantaA LLC in Austin, Texas."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DC9RKBT6XS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-DC9RKBT6XS");
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-bg {
+        background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.1
+        ); /* Reduced opacity for brighter effect */
+        background-blend-mode: soft-light; /* Brighter blend mode */
+      }
+      .section-bg {
+        background-image: url("https://images.unsplash.com/photo-1531218150217-54595bc2b934?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.2
+        ); /* Reduced opacity for brighter effect */
+        background-blend-mode: soft-light; /* Brighter blend mode */
+      }
+      .contact-content {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      .contact-content.show {
+        display: block;
+        opacity: 1;
+      }
+      .backdrop {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+      .backdrop.show {
+        display: block;
+      }
+      .logo-img {
+        height: 40px;
+        width: auto;
+        max-width: 100px;
+        margin-right: 12px; /* Space between logo and text */
+        filter: drop-shadow(
+          0 2px 4px rgba(0, 0, 0, 0.2)
+        ); /* Improves contrast on teal background */
+      }
+      :root {
+        --teal-900: #0d9488;
+        --teal-600: #14b8a6;
+        --coral-500: #f25f5c;
+        --yellow-500: #fbbf24;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-teal-900 text-white sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <!-- <a href="#home" aria-label="AdvaantaA LLC Home">
+            <img src="/logo.png" alt="AdvaantaA LLC Logo" class="logo-img" />
+          </a> -->
+          <h1 class="text-2xl font-bold">AdvaantaA LLC</h1>
+        </div>
+        <ul class="flex space-x-6">
+          <li>
+            <a
+              href="#home"
+              class="hover:text-yellow-500 transition focus:ring-2 focus:ring-teal-600 outline-none"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="hover:text-yellow-500 transition focus:ring-2 focus:ring-teal-600 outline-none"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="hover:text-yellow-500 transition focus:ring-2 focus:ring-teal-600 outline-none"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#products"
+              class="hover:text-yellow-500 transition focus:ring-2 focus:ring-teal-600 outline-none"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="hover:text-yellow-500 transition focus:ring-2 focus:ring-teal-600 outline-none"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="hero-bg h-screen flex items-center justify-center text-white"
+    >
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-5xl font-bold mb-4">Welcome to AdvaantaA LLC</h2>
+        <p class="text-xl mb-6">
+          Innovative Software Development & Global Trade Services in Austin,
+          Texas
+        </p>
+        <button
+          onclick="showContact()"
+          class="bg-teal-600 hover:bg-coral-500 text-white font-semibold py-3 px-6 rounded-lg transition focus:ring-2 focus:ring-teal-600 outline-none"
+          aria-label="Open contact form"
+        >
+          Get in Touch
+        </button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 section-bg">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-8">About AdvaantaA LLC</h2>
+        <p
+          class="text-lg text-center max-w-3xl mx-auto"
+          style="
+            background-color: rgba(255, 255, 255, 0.8);
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            padding: 10px;
+          "
+        >
+          Based in Austin, Texas, AdvaantaA LLC specializes in cutting-edge
+          software development, expert consulting, professional training, and
+          global trade services. Our mission is to empower businesses with
+          innovative software solutions and seamless export/import operations,
+          including commodities.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-8">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <i
+              class="fas fa-code text-4xl text-yellow-500 mb-4"
+              aria-hidden="true"
+            ></i>
+            <h3 class="text-xl font-semibold mb-2">Software Development</h3>
+            <p>
+              Custom software solutions tailored for businesses in the USA and
+              world wide, built with cutting-edge technologies.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <i
+              class="fas fa-handshake text-4xl text-yellow-500 mb-4"
+              aria-hidden="true"
+            ></i>
+            <h3 class="text-xl font-semibold mb-2">Consulting</h3>
+            <p>
+              Expert consulting services to optimize operations and drive
+              success for businesses.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <i
+              class="fas fa-chalkboard-teacher text-4xl text-yellow-500 mb-4"
+              aria-hidden="true"
+            ></i>
+            <h3 class="text-xl font-semibold mb-2">Training</h3>
+            <p>
+              Professional training programs to upskill teams in software
+              development and industry practices.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <i
+              class="fas fa-globe text-4xl text-yellow-500 mb-4"
+              aria-hidden="true"
+            ></i>
+            <h3 class="text-xl font-semibold mb-2">Export & Import</h3>
+            <p>
+              Global trade solutions specializing in commodity exports and
+              imports.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 section-bg">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-8">
+          Our Software Products
+        </h2>
+        <p
+          class="text-lg text-center max-w-3xl mx-auto"
+          style="
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            padding: 10px;
+          "
+        >
+          AdvaantaA LLC develops innovative software products designed to
+          empower businesses in in the USA and world wide. Our solutions
+          prioritize scalability, security, and user experience.
+        </p>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-2">
+              Custom Enterprise Solutions
+            </h3>
+            <p>
+              Scalable software for enterprises, enhancing productivity and
+              efficiency.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-2">Mobile Applications</h3>
+            <p>
+              Responsive iOS and Android apps designed for seamless user
+              experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
+        <p class="text-lg text-center max-w-3xl mx-auto mb-8">
+          Transform your business with our software development and trade
+          services in the USA and world wide. Contact us today!
+        </p>
+        <div class="text-center mb-8">
+          <p>
+            <strong>Email:</strong>
+            <a
+              href="mailto:advaantaa@gmail.com"
+              class="text-teal-600 hover:text-coral-500"
+              >advaantaa@gmail.com</a
+            ><br />
+            <!-- <strong>Phone:</strong>
+            <a
+              href="tel:+15125551234"
+              class="text-teal-600 hover:text-coral-500"
+              >+1 (512) 555-1234</a
+            ><br /> -->
+            <strong>Address:</strong> 108 Wild Basin Rd S, Austin, TX 78746
+          </p>
+        </div>
+        <div class="flex justify-center mb-8">
+          <button
+            onclick="showContact()"
+            class="bg-teal-600 hover:bg-coral-500 text-white font-semibold py-3 px-6 rounded-lg transition focus:ring-2 focus:ring-teal-600 outline-none"
+            aria-label="Open contact form"
+          >
+            Contact Us
+          </button>
+        </div>
+        <div class="backdrop" id="backdrop" onclick="showContact()"></div>
+        <div id="contactContent" class="contact-content">
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg relative"
+          >
+            <button
+              onclick="showContact()"
+              class="absolute top-2 right-2 text-gray-600 hover:text-coral-500 focus:ring-2 focus:ring-teal-600 outline-none"
+              aria-label="Close contact form"
+            >
+              <i class="fas fa-times text-xl"></i>
+            </button>
+            <form
+              action="https://formspree.io/f/your-formspree-id"
+              method="POST"
+              class="space-y-4"
+              aria-labelledby="contact-form-title"
+            >
+              <h3 id="contact-form-title" class="sr-only">Contact Form</h3>
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600"
+                  aria-required="true"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600"
+                  aria-required="true"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows="4"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600"
+                  aria-required="true"
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="bg-teal-600 hover:bg-coral-500 text-white font-semibold py-3 px-6 rounded-lg transition focus:ring-2 focus:ring-teal-600 outline-none"
+                >
+                  Send Us a Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-900 text-white py-6">
+      <div class="container mx-auto px-6 text-center">
+        <p>
+          © 2022 AdvaantaA LLC. All rights reserved.
+          <a
+            href="./privacy-policy.html"
+            class="underline hover:text-yellow-500 focus:ring-2 focus:ring-teal-600 outline-none"
+            >Privacy Policy</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Toggle contact form and backdrop visibility
+      function showContact() {
+        const contactContent = document.getElementById("contactContent");
+        const backdrop = document.getElementById("backdrop");
+        contactContent.classList.toggle("show");
+        backdrop.classList.toggle("show");
+        if (contactContent.classList.contains("show")) {
+          document.getElementById("name").focus(); // Focus on first input
+        }
+      }
+
+      // Trap focus within modal when open
+      document.addEventListener("keydown", function (event) {
+        const contactContent = document.getElementById("contactContent");
+        if (contactContent.classList.contains("show") && event.key === "Tab") {
+          const focusableElements = contactContent.querySelectorAll(
+            "input, textarea, button"
+          );
+          const firstElement = focusableElements[0];
+          const lastElement = focusableElements[focusableElements.length - 1];
+          if (event.shiftKey && document.activeElement === firstElement) {
+            event.preventDefault();
+            lastElement.focus();
+          } else if (
+            !event.shiftKey &&
+            document.activeElement === lastElement
+          ) {
+            event.preventDefault();
+            firstElement.focus();
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

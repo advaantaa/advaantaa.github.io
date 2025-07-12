@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://advaantaa.com/sitemap.xml
